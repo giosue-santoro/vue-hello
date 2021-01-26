@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>vue-hello-bonus</title>
+</head>
+<body>
+
+    <ul>
+        <li>v-bind</li> <!-- Aggancia a tag html una variabile - lo rende reattivo -->
+        <li>methods</li><!-- Classiche funzioni vanilla javascript-->
+        <li>v-once</li> <!-- Blocca il valore di una variabile rendendola non reattiva, cambia una sola volta-->
+        <li>v-html</li> <!-- Renderizza stringhe html-->
+    </ul>
+
+    <div id="root">
+        {{ linkImg }}
+        <div v-html="myHtml" style="text-align: center;"></div>
+        <img :src="linkImg" style="border-radius: 50px; height: 300px;">
+        <button @click="react" style="outline: none; padding: 30px; border: none; background-color: blue; color: white; border-radius: 20px; cursor: pointer;">React</button>
+        <button @click="angular" style="outline: none; padding: 30px; border: none; background-color: red; color: white; border-radius: 20px; cursor: pointer;">Angular</button>
+        <button @click="vue" style="outline: none; padding: 30px; border: none; background-color: green; color: white; border-radius: 20px; cursor: pointer;">Vue</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
