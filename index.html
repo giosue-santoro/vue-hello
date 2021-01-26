@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>vue-hello</title>
+</head>
+<body>
+
+    <div id="root">
+      <h2>Stampa il tuo messaggio scrivendo nell'input box:</h2>
+      <input v-model="messaggio" style="width: 500px; height: 50px; font-size: 25px;">
+      <h1>{{messaggio}}</h1>
+      <img :src=immagine alt="VueJS" style="height: 300px;">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
